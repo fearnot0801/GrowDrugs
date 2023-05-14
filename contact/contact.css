@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+ul, li{list-style:none;}
+:root {
+    --blue: rgb(98, 98, 255);
+    --dark_blue: rgb(0, 0, 214);
+    --primarydark: #13161e;
+    --secondarydark: #0d1016;
+    --white: white;
+    --grey: rgba(107, 107, 107, 0.5);
+    --light_grey: rgb(187, 187, 187);
+    --black: black;
+    --active: rgb(187, 187, 187);
+  }
+
+body{
+    background-color:var(--primarydark);    
+}
+body{
+    -ms-overflow-style: none;
+} 
+::-webkit-scrollbar {
+    display: none;
+}
+header{
+    padding:0;
+    margin:0;
+    background-color:var(--secondarydark);
+   
+}
+.menu{
+    align-items:center;
+    display:flex;
+    justify-content:center;
+}
+.menu > li{
+    width:50px;
+    color:ghostwhite;
+    font-size:22px;
+    font-family: 'Roboto', sans-serif;
+    margin-left:6vw;
+    margin-right:6vw;
+}
+.menu > li :hover{
+    color:var(--active);
+}
+.menu > ul > li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color:ghostwhite;
+}
+
+.logo{
+    display:flex;
+    width:55px;
+    margin-top:12px;
+    margin-bottom:12px;
+    margin-left:6vw;
+    margin-right:6vw;
+}
+
+/* error_page */
+.error{
+    margin-top:250px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:ghostwhite;
+    text-align:center;
+}
+.error_div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+}
+.error_div > ul > li > h1{
+    font-size:85px;
+    font-family: 'Kanit', sans-serif;   
+}
+.btn{
+    font-size:17px;
+    margin-top:30px;
+    width:100px;
+    height:25px;
+    background-color:dodgerblue;
+    display:inline-block;
+    transition-property: all;
+    transition-duration: 0.09s;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+.error_div > ul > li> p{
+    margin-top:13px;
+    font-size: 25px;
+}
+.btn:hover{
+    background-color:royalblue;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+/* creater */
+.creater{
+    height: 60px;
+    background-color: var(--secondarydark);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:354px;
+}
+.creater_div > p {
+    color:ghostwhite;
+    font-size:15px;
+}
