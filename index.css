@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-
 *{
     margin:0;
     padding:0;
@@ -41,14 +40,12 @@ header{
     justify-content:center;
 }
 .menu > li{
-    font-family: 'Inter', sans-serif;
-    font-weight:300;
-    padding-right:28px;
-    padding-left:28px;
-    display:flex;
-    justify-content:center;
-    color:ghostwhite;
-    font-size :14px;
+    font-weight: 300;
+    padding: 0px 28px;
+    display: flex;
+    justify-content: center;
+    color: ghostwhite;
+    font-size : 14px;
     margin: auto 12px;
     transition: color 0.3s;
 }
@@ -63,64 +60,65 @@ a{
     color:ghostwhite;
 }
 .logo{
-    display:flex;
+    display: flex;
     justify-content: center;
-    width:25px;
+    width: 25px;
     margin: 9px auto;
-    margin-right:40px;
+    margin-right: 40px;
+    transition: all 0.2s;
+}
+.logo:hover{
+    filter: invert(35%);
 }
 .icon_header{
-    margin:0px;
-    padding:0px;  
-    width:0px;
+    margin: 0px;
+    padding: 0px;  
+    width: 0px;
 }
 .icon_header:hover{
     cursor: pointer;
 }
 .menu > li > img{
-    width:17px;
+    width: 17px;
     filter: invert(100%);
+    transition: all 0.2s;
 }
-
-
+.menu > li > img:hover{
+    filter: invert(60%);
+}
 
 /* main */
 .main{
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     height: 800px;
-    padding-top:110px;
+    padding-top: 110px;
     background-color: var(--primarydark);
 }
 .main > li > h1{
-    font-family: 'Inter', sans-serif;
-    font-weight:600;
-    color:ghostwhite;
-    font-size:47px;
+    font-weight: 600;
+    color: ghostwhite;
+    font-size: 47px;
 }
 .main > li > p{
-    font-family: 'Inter', sans-serif;
-    font-weight:300;
-    margin-top:16px;
-    font-size:18.5px;
-    color:darkgrey;
+    font-weight: 300;
+    margin-top: 16px;
+    font-size: 18.5px;
+    color: darkgrey;
 }
 .menu > li > img{
-    width:17px;
+    width: 17px;
     filter: invert(100%);
 }
 .main_img{
-    width:420px;
-    display:inline-block;
-    transition-property: all;
-    transition-duration: 0.5s;
+    width: 420px;
 }
 .main_ex{
-    display:flex;
-    align-items:center; 
+    display: flex;
+    align-items: center; 
     justify-content: center;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     background-color: var(--primarydark);
 }
 .a1, .a2{
@@ -129,98 +127,97 @@ a{
 }
 
 .a11, .a12, .a21, .a22{
-    font-family: 'Inter', sans-serif;
-    padding-top:10px;   
-    margin-top:3px;
-    border-top:0.5px var(--grey) solid;
-    color:ghostwhite;
-    margin-bottom:30px;
-}
-.main2_cards{
-    position: relative;
-}
-.main2_firstpill{
-    position: absolute; top:155px; left: 20%;
-}
-.main2_secondpill{
-    position: absolute; top: 155px; left: 40.5%;
-}
-.main2_thirdpill{
-    position:  absolute; top: 155px; right: 20%;
+    padding-top: 10px;   
+    margin-top: 3px;
+    border-top: 0.5px var(--grey) solid;
+    color: ghostwhite;
+    margin-bottom: 30px;
 }
 
 /* main_2 */
 .main_2{
-    padding-top:150px;   
-    background-color:white;
-    height:850px;
-    display:flex;
+    padding-top: 150px;   
+    background-color: white;
+    height: 850px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+.main2_cards{
+    position: relative;
+    width: 100%;
+}
 .main2_title{
-    font-family: 'Inter', sans-serif;
-    font-weight:600;
-    font-size:47px;
-    text-align:center;
+    font-weight: 600;
+    font-size: 47px;
+    text-align: center;
 }
 .main2_subtitle{
-    font-family: 'Inter', sans-serif;
     font-weight:300;
-    font-size:20px;
+    font-size: 20px;
 }
 .main2_titleul{
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 .powderexp2{
     width: 550px;
-    z-index: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 67%;
 }
 .main2_pills{
+    position: relative;
     width:110px;
+    z-index: 10;
 }
 .save{
     display: flex;
-    font-family: 'Inter', sans-serif;
-    font-weight:600;
-    font-size:17px;
-    width:265px;
-    height:35px;
+    font-weight: 600;
+    position: relative;
+    font-size: 17px;
+    width: 265px;
+    height: 35px;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius:2px;
     border: 2px solid rgb(118, 250, 114);
+    margin: 5px auto;
 }
 .buy_btn{
     display: flex;
     text-align: center;
-    font-family: 'Inter', sans-serif;
     font-weight:700;
-    color:ghostwhite;
-    width:110px;
+    position: relative;
+    color: ghostwhite;
+    width: 100px;
+    height: 29px;
     background-color: var(--blue);
-    height:29px;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    transition-property:all;
-    transition-duration:0.8s;
+    transition: all 0.5s;
+    margin: 20px auto;
 }
 .buy_btn:hover{
-    background-color:var(--dark_blue);
+    background-color: var(--dark_blue);
 }
-
-
+.pills{
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    margin-top: 140px;
+}
 
 /* footer */
 .footer{
-    height: 120px;
-    background-color: var(--primarydark);
+    height: 130px;
+    background-color: var(--secondarydark);
     color: white;
     font-size: 13px;
     display: flex;
@@ -232,7 +229,7 @@ a{
     width: 55%; 
 }
 .safety > ul > li{
-    margin: 2px 0px;
+    margin: 7px 0px;
 }
 .linker{
     text-decoration-line: underline;
@@ -260,10 +257,9 @@ a{
 
 @media screen and (max-width: 991px) {
     .menu {
-        display:flex;
-        flex-direction:column;
-        margin-left:0;
-        margin-right:0;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
     }
     .menu_logo{
         height: 0;
@@ -277,11 +273,11 @@ a{
     }
     .menu > li{
         padding: 7px;
-        font-size:17.5px;
-        display:none;
+        font-size: 17.5px;
+        display: none;
     }
     .icon_header > img{
-        display:none;
+        display: none;
     }
     .footer_div{
         flex-direction: row;
